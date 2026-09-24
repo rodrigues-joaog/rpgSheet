@@ -5,9 +5,13 @@ A single file RPG sheet built on **HTML**, **CSS** and **JavaScript** for a pers
 ### Roadmap
 ###### Legend:
 🟢 Done
+
 🟣 Blocked due to another task
+
 🟡 Works but not completed
+
 🟠 In progress
+
 🔴 Pending
 ###### Tasks:
 🟠 **Profile picture**
