@@ -2,6 +2,9 @@
 
 A single file RPG sheet built on **HTML**, **CSS** and **JavaScript** for a personal vttrpg project called **Projeto Hades**
 
+### Credits
+Still empty, for now
+
 ### Roadmap
 ###### Legend:
 🟢 Done
@@ -14,6 +17,11 @@ A single file RPG sheet built on **HTML**, **CSS** and **JavaScript** for a pers
 
 🔴 Pending
 ###### Tasks:
+🟠 **Styling, Compliance and Offline**
+- Convert images into base64 for offline use
+- Import bootstrap css & js and google fonts & symbols for offline use
+- Check for copyright and replace images: navbar, background, char details and char effects
+
 🟠 **Profile picture**
 - Currently static (not changeable)
 - Needs base64 converter
@@ -37,7 +45,7 @@ A single file RPG sheet built on **HTML**, **CSS** and **JavaScript** for a pers
 - Needs a select input
 
 🔴 **Inventory**
-- Open bag image (design choice is still being evaluated)
+- Get bag image - design choice is still under discussion (with myself)
 - Needs a text field for miscellaneous items
 - Needs a weapon slot with: name, damage and ammunition
 - Needs a tool slot with: name, description and uses
