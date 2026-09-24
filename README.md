@@ -1,21 +1,21 @@
 # rpgSheet
 
-A single file RPG sheet built on **HTML**, **CSS** and **JavaScript** intended for **online and offline use** for a personal vttrpg project called **Projeto Hades**
+A **single file RPG sheet** built on **HTML**, **CSS** and **JavaScript** intended for **online and offline use** for a personal vttrpg project called **Projeto Hades**
 
 ### Credits
-Still empty, for now
+*Still empty, for now*
 
 ### Roadmap
 ###### Legend:
-🟢 Done
+🟢 **Done**
 
-🟣 Blocked due to another task
+🟣 **Blocked due to another task**
 
-🟡 Works but not completed
+🟡 **Works but not completed**
 
-🟠 In progress
+🟠 **In progress**
 
-🔴 Pending
+🔴 **Pending**
 ###### Tasks:
 🟠 **Styling, Compliance and Offline**
 - Convert images into base64 for offline use
@@ -65,13 +65,15 @@ Still empty, for now
 - Just a notepad, really
 - Okay, I may try to make it flippable (NO PROMISES THO!)
 
-🟠 **Save file**
-- Button already done
+🟣 **Save file**
+- Button visual already done
 - Will save a JSON file
+- Awaiting all previous tasks related with input
 
-🟠 **Import file**
-- Button already done too
+🟣 **Import file**
+- Button visual already done too
 - Will import a JSON file
+- Awaiting all previous tasks related with input
 
 🔴 **Server sync**
 - Button will have visual indication of sync (pressed and symbol spinning)
