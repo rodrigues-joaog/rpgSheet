@@ -1,6 +1,6 @@
 # rpgSheet
 
-A single file RPG sheet built on **HTML**, **CSS** and **JavaScript** for a personal vttrpg project called **Projeto Hades**
+A single file RPG sheet built on **HTML**, **CSS** and **JavaScript** intended for **online and offline use** for a personal vttrpg project called **Projeto Hades**
 
 ### Credits
 Still empty, for now
@@ -30,7 +30,6 @@ Still empty, for now
 - Font size breaking on specific screen sizes
 
 🟡 **Char basic details**
-- Field is usable
 - Input size is fixed and does not fit empty space
 
 🟠 **Char status**
