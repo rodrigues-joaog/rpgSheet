@@ -202,13 +202,12 @@
         }
         
         .polaroid-text{
-            color: var(--blackpen);
             border: 0px;
             text-align: center;
             height: 20%;
             width: 100%;
             background-color: transparent;
-            font-size: 2lh;
+            font-size: 1.8em;
         }
 
         .polaroid-text:focus{
@@ -362,7 +361,7 @@
                             <div class="polaroid ds-1">
                                 <div class="polaroid-inner align-content-center text-center">
                                     <img class="polaroid-picture" src="https://i.pinimg.com/736x/1a/55/6a/1a556a839966f5f29263664be5b794eb.jpg">
-                                    <input type="text" class="name mt-2 tangerine-bold p-0" id="name" placeholder="Nome Sobrenome">
+                                    <input type="text" class="polaroid-text cs-font mt-2 p-0" id="char-name" placeholder="Nome Sobrenome">
                                 </div>
                             </div>
                         </div>
@@ -371,24 +370,24 @@
                             <div class="row row-gap-3 tw-font">
                                 <!-- details -->
                                 <div class="col-5">
-                                    <label for="nacionality">Nacionalidade</label>
-                                    <input class="detail-input" type="text" name="nacionality" id="nacionality">
+                                    <label for="char-country">Nacionalidade</label>
+                                    <input class="detail-input" type="text" name="char-country" id="nacionality">
                                 </div>
                                 <div class="col-3">
-                                    <label for="bday">Niver</label>
-                                    <input class="detail-input" type="text" name="bday" id="bday">
+                                    <label for="char-bday">Niver</label>
+                                    <input class="detail-input" type="text" name="char-bday" id="bday">
                                 </div>
                                 <div class="col-4">
-                                    <label for="age">Idade</label>
-                                    <input class="detail-input" type="text" name="age" id="age">
+                                    <label for="char-age">Idade</label>
+                                    <input class="detail-input" type="text" name="char-age" id="age">
                                 </div>
                                 <div class="col-8">
-                                    <label for="shape">Corpo</label>
-                                    <input class="detail-input" type="text" name="shape" id="shape">
+                                    <label for="char-shape">Corpo</label>
+                                    <input class="detail-input" type="text" name="char-shape" id="shape">
                                 </div>
                                 <div class="col-4">
-                                    <label for="height">Altura</label>
-                                    <input class="detail-input" type="text" name="height" id="height">
+                                    <label for="char-height">Altura</label>
+                                    <input class="detail-input" type="text" name="char-height" id="height">
                                 </div>
                                 <!-- status -->
                                 <div class="col-12">
@@ -492,6 +491,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- effects -->
                 <div class="d-none d-lg-grid col-1"></div>
                 <div class="col-12 col-lg-5 tw-font paper-2 ps-4 ds-1">
                     <div class="bl"></div>
