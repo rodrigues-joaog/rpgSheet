@@ -80,3 +80,8 @@ A **single file RPG sheet** built on **HTML**, **CSS** and **JavaScript** intend
 - Will open a modal screen with: server address, username and password
 - After logging in, will prompt a char selection screen from the server
 - Will save changes automatically while activated
+
+### Preview
+This app is currently on early stage of devlopment and is user ready yet!
+
+But, you may try it here: https://rodrigues-joaog.github.io/rpgSheet/
