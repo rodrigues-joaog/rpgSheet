@@ -249,18 +249,19 @@
             border-radius: 1px;
         }
 
-        .old-paper-text-input{
+        .detail-input{
+            width: 100%;
             font-family: "Caveat", cursive;
             font-optical-sizing: auto;
             font-weight: 400;
             font-style: normal;
             font-size: 1.8em;
             background: transparent;
-            border: transparent;
+            border: 0px;
         }
 
-        .detail-input{
-            width: 100%;
+        .detail-input:focus{
+            outline: none;
         }
 
         /* --- status indicators --- */
@@ -366,28 +367,28 @@
                             </div>
                         </div>
                         <!-- paper sheet -->
-                        <div class="col-8 col-lg-8 paper ds-1 p-3" id="char-detail">
-                            <div class="row row-gap-3 tw-font">
+                        <div class="col-8 col-lg-8 paper-1 ds-1 p-3" id="char-detail">
+                            <div class="row row-gap-1 tw-font">
                                 <!-- details -->
-                                <div class="col-5">
+                                <div class="col-12 col-xl-5">
                                     <label for="char-country">Nacionalidade</label>
-                                    <input class="detail-input" type="text" name="char-country" id="nacionality">
+                                    <input class="detail-input" type="text" name="char-country" id="nacionality" placeholder="Brasileiro(a)">
                                 </div>
-                                <div class="col-3">
+                                <div class="col-5 col-xl-3">
                                     <label for="char-bday">Niver</label>
-                                    <input class="detail-input" type="text" name="char-bday" id="bday">
+                                    <input class="detail-input" type="text" name="char-bday" id="bday" placeholder="dd/mm">
                                 </div>
-                                <div class="col-4">
+                                <div class="col-7 col-xl-4">
                                     <label for="char-age">Idade</label>
-                                    <input class="detail-input" type="text" name="char-age" id="age">
+                                    <input class="detail-input" type="text" name="char-age" id="age" placeholder="24 anos">
                                 </div>
-                                <div class="col-8">
-                                    <label for="char-shape">Corpo</label>
-                                    <input class="detail-input" type="text" name="char-shape" id="shape">
-                                </div>
-                                <div class="col-4">
+                                <div class="col-5">
                                     <label for="char-height">Altura</label>
-                                    <input class="detail-input" type="text" name="char-height" id="height">
+                                    <input class="detail-input" type="text" name="char-height" id="height" placeholder="1,69m">
+                                </div>
+                                <div class="col-7">
+                                    <label for="char-shape">Corpo</label>
+                                    <input class="detail-input" type="text" name="char-shape" id="shape" placeholder="blablabla">
                                 </div>
                                 <!-- status -->
                                 <div class="col-12">
