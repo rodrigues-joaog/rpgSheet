@@ -17,34 +17,10 @@
     <!-- hadesheet -->
     <title>🌙 Projeto Hades</title>
     <style>
-        /* bold header font */
-        .header-font {
-            font-family: "Uncial Antiqua", system-ui;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 1.8em;
-            text-shadow: 1px 1px 3px rgba(0,0,0,80%);
-            color: var(--brand-five);
-        }
+        /*
+        ### general ###
+        */
 
-        /* regular body font */
-        .tw-font, p, label{
-            font-family: "Special Elite", system-ui;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 1.1em;
-        }
-
-        .material-symbols-outlined{
-            font-variation-settings:
-            'FILL' 0,
-            'wght' 400,
-            'GRAD' 0,
-            'opsz' 24;
-            user-select: none;
-        }
-
-        /* branding */
         :root{
             --brand-one: #0a5f7f;
             --brand-two: #00d9c4;
@@ -60,7 +36,81 @@
             --bluepen: #292288;
         }
 
-        /* pushable button yay */
+        body{
+            height: 100%;
+        }
+
+        /* --- fonts --- */
+
+        .material-symbols-outlined{
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24;
+            user-select: none;
+        }
+        
+        .tw-font, label{
+        /* typewriter font */
+            font-family: "Special Elite", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.1em;
+        }
+
+        .cs-font{
+        /* cursive font */
+            font-family: "Tangerine", cursive;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .bd-font {
+        /* brand font */
+            font-family: "Uncial Antiqua", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.8em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,80%);
+            color: var(--brand-five);
+        }
+
+        /* --- dropshadow --- */
+        .ds-1{
+            box-shadow: 7px 7px 10px rgba(0,0,0,20%);
+        }
+
+        /* --- materials --- */
+
+        .wood-1{
+        /* oak like wood */
+            color: var(--blackpen);
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fc0%2Fae%2F66%2Fc0ae667b522cbee616623a4575d1b7d4.jpg&f=1&nofb=1&ipt=0acb9406383c205ddba33c9b76fea16dcf0eb6d7b1c914bdd76194f78f66e397);
+        }
+
+        .wood-2{
+        /* darker wood */
+            background-color: #964629;
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Fpremium-photo%2Forange-wood-texture-large-textured-wood-ash-tree-is-painted-orange-orange-ash_418821-3736.jpg&f=1&nofb=1&ipt=61b57a9d1264b21499319c73de2f20ce003ce25e341f8b5332576fa4aa2a6b2c);
+        }
+
+        .paper-1{
+        /* slightly crumbled paper */
+            background-color: var(--offwhite);
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fpaper-texture-background-zlvqcgwohwvd642j.jpg&f=1&nofb=1&ipt=43e92fca9abe8d607b6fdee3666cbe59ff1eaef53ddc6a5ee616312f571d135b);
+            background-size: cover;
+            background-position: 0% 50%;
+        }
+
+        .paper-2{
+        /* recycled paper */
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Funblast.com%2Fwp-content%2Fuploads%2F2022%2F01%2FPaper-Texture-4.jpg&f=1&nofb=1&ipt=5a588833eb8db1673e403bd02ee41282b959b75d7c75b400df7f07479bb65f02);
+            background-size: cover;
+        }
+
+        /* --- pushable button :p --- */
+
         .btn-cool{
             margin-left: 10px;
             padding: 7px 9px;
@@ -94,38 +144,40 @@
             top: 0px;
         }
 
-        /* navbar bg */
-        .nav-bg{
-            background-image: url(https://i.pinimg.com/1200x/54/ea/df/54eadf0e65bafb86cf7b6535c04e00fc.jpg);
-            background-size: 40%;
-            background-position: 30% 15%;
-            box-shadow:
-            inset 0px -.6em rgba(0,0,0,60%),
-            0px 0px 8px 8px rgba(0,0,0,60%);
-        }
+        /* --- gambling board --- */
 
-        /* sheet background */
-        body{
-            color: var(--blackpen);
-            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fc0%2Fae%2F66%2Fc0ae667b522cbee616623a4575d1b7d4.jpg&f=1&nofb=1&ipt=0acb9406383c205ddba33c9b76fea16dcf0eb6d7b1c914bdd76194f78f66e397);
+        .board{
+            background-size: cover;
+            border: transparent;
+            border-radius: 10px;
+            z-index: 5;
+            width: 100%;
             height: 100%;
+            box-shadow:
+            0px 0px 8px 4px rgba(0,0,0,25%),
+            inset 6px 6px rgba(255,255,255,15%),
+            inset -6px -6px rgba(0,0,0,15%);
         }
 
-        .obj-ds{
-            box-shadow: 7px 7px 10px rgba(0,0,0,20%);
+        .board-inner{
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F021%2F317%2F384%2Flarge_2x%2Fbrown-color-velvet-fabric-texture-used-as-background-empty-brown-fabric-background-of-soft-and-smooth-textile-material-there-is-space-for-text-free-photo.jpg&f=1&nofb=1&ipt=1ceb54814e210a5c2bf3de35e62b825ebfb69eff9fe537f19a8e9284fe12c236);
+            background-size: cover;
+            box-shadow: 
+            inset 0px 0px 8px 4px rgba(0,0,0,35%),
+            0px 0px 2px 4px rgba(0,0,0,20%),
+            inset 4px 4px 8px rgba(0,0,0,10%),
+            -4px -4px 2px rgba(0,0,0,10%);
+            width: 100%;
+            height: 100%;
+            border: transparent;
+            border-radius: 5px;
         }
 
-        #basic-info{
-            position: relative;
-            rotate: 1deg;
-            z-index: 1;
-        }
+        /* --- polaroid --- */
 
-        /* char polaroid */
-        .char-polaroid{
+        .polaroid{
             position: relative;
             z-index: 10;
-            rotate: -2deg !important;
             border-radius: 2px;
             background-color: var(--offwhite);
             padding-top: 100%;
@@ -134,7 +186,7 @@
             transition: opacity .2s ease-in-out;
         }
 
-        .chat-polaroid-inner{
+        .polaroid-inner{
             position: absolute;
             top: 0;
             bottom: 0;
@@ -142,55 +194,63 @@
             right: 0;
         }
 
-        .char-picture{
+        .polaroid-picture{
             object-fit: cover;
             object-position: 50% 1%;
             width: 85%;
             height: 65%;
         }
         
-        .char-name{
+        .polaroid-text{
             color: var(--blackpen);
             border: 0px;
             text-align: center;
             height: 20%;
             width: 100%;
-            font-family: "Tangerine", cursive;
-            font-weight: 700;
-            font-style: normal;
             background-color: transparent;
             font-size: 2lh;
         }
 
-        @media (max-width: 1399.98px) {
-            .char-name{
-                color: var(--blackpen);
-                border: 0px;
-                text-align: center;
-                height: 20%;
-                width: 100%;
-                font-family: "Tangerine", cursive;
-                font-weight: 700;
-                font-style: normal;
-                background-color: transparent;
-                font-size: 1.4lh;
-            }
-        }
-
-        .char-name:focus{
+        .polaroid-text:focus{
             outline: none;
         }
+    
+        /* 
+        ### navbar ###
+        */
 
-        .paper{
-            background-color: var(--offwhite);
-            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fpaper-texture-background-zlvqcgwohwvd642j.jpg&f=1&nofb=1&ipt=43e92fca9abe8d607b6fdee3666cbe59ff1eaef53ddc6a5ee616312f571d135b);
-            background-size: cover;
-            background-position: 0% 50%;
+        #navbar{
+            background-image: url(https://i.pinimg.com/1200x/54/ea/df/54eadf0e65bafb86cf7b6535c04e00fc.jpg);
+            background-size: 40%;
+            background-position: 30% 15%;
+            box-shadow:
+            inset 0px -.6em rgba(0,0,0,60%),
+            0px 0px 8px 8px rgba(0,0,0,60%);
+        }
+
+        /* 
+        ### photo + name ###
+        */
+
+        #char-polaroid{
+            rotate: -2deg !important;
+        }
+
+        /* 
+        ### detail + status ###
+        */
+
+        /* --- basic details --- */
+
+        #char-detail{
+            position: relative;
+            rotate: 1deg;
+            z-index: 1;
             border: transparent;
             border-radius: 1px;
         }
 
-        .paper-text-input{
+        .old-paper-text-input{
             font-family: "Caveat", cursive;
             font-optical-sizing: auto;
             font-weight: 400;
@@ -200,9 +260,11 @@
             border: transparent;
         }
 
-        .paper-text-input:focus{
-            outline: none;
+        .detail-input{
+            width: 100%;
         }
+
+        /* --- status indicators --- */
 
         .status-indicator{
             font-size: 1.2em;
@@ -242,50 +304,25 @@
             'FILL' 1 !important;
         }
 
-        .board{
-            background-color: #964629;
-            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Fpremium-photo%2Forange-wood-texture-large-textured-wood-ash-tree-is-painted-orange-orange-ash_418821-3736.jpg&f=1&nofb=1&ipt=61b57a9d1264b21499319c73de2f20ce003ce25e341f8b5332576fa4aa2a6b2c);
-            background-size: cover;
-            border: transparent;
-            border-radius: 10px;
-            z-index: 5;
-            width: 100%;
-            height: 100%;
-            box-shadow:
-            0px 0px 8px 4px rgba(0,0,0,25%),
-            inset 6px 6px rgba(255,255,255,15%),
-            inset -6px -6px rgba(0,0,0,15%);
-        }
+        /*
+        ### effects ###
+        */
 
-        .board-inner{
-            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F021%2F317%2F384%2Flarge_2x%2Fbrown-color-velvet-fabric-texture-used-as-background-empty-brown-fabric-background-of-soft-and-smooth-textile-material-there-is-space-for-text-free-photo.jpg&f=1&nofb=1&ipt=1ceb54814e210a5c2bf3de35e62b825ebfb69eff9fe537f19a8e9284fe12c236);
-            background-size: cover;
-            box-shadow: 
-            inset 0px 0px 8px 4px rgba(0,0,0,35%),
-            0px 0px 2px 4px rgba(0,0,0,20%),
-            inset 4px 4px 8px rgba(0,0,0,10%),
-            -4px -4px 2px rgba(0,0,0,10%);
-            width: 100%;
-            height: 100%;
-            border: transparent;
-            border-radius: 5px;
-        }
-
-        .docnote{
-            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Funblast.com%2Fwp-content%2Fuploads%2F2022%2F01%2FPaper-Texture-4.jpg&f=1&nofb=1&ipt=5a588833eb8db1673e403bd02ee41282b959b75d7c75b400df7f07479bb65f02);
-            background-size: cover;
+        #effects{
             rotate: -1deg;
             border: transparent;
             border-radius: 10px;
         }
 
         .bl{
+        /* border left */
             position: absolute;
             border-left: solid 2px var(--blackpen);
             height: 100%;
         }
 
         .bb{
+        /* border bottom */
             border-bottom: solid 2px var(--blackpen);
             width: 100%;
         }
@@ -294,11 +331,11 @@
   <body>
     <div class="container-fluid p-0">
         <!-- navbar -->
-        <div class="p-5 pt-3 pb-4 nav-bg">
+        <div class="p-5 pt-3 pb-4" id="navbar">
             <div class="row align-items-center">
                 <!-- header -->
                 <div class="col">
-                    <span class="header-font">🌙 Projeto Hades</span>
+                    <span class="bd-font">🌙 Projeto Hades</span>
                 </div>
                 <!-- actions -->
                 <div class="col text-end p-0 user-select-none">
@@ -322,18 +359,37 @@
                     <div class="row">
                         <!-- polaroid -->
                         <div class="col-4 col-lg-4 p-0">
-                            <div class="char-polaroid obj-ds">
-                                <div class="chat-polaroid-inner align-content-center text-center">
-                                    <img class="char-picture" src="https://i.pinimg.com/736x/1a/55/6a/1a556a839966f5f29263664be5b794eb.jpg">
-                                    <input type="text" class="char-name mt-2 tangerine-bold p-0" id="name" placeholder="Nome Sobrenome">
+                            <div class="polaroid ds-1">
+                                <div class="polaroid-inner align-content-center text-center">
+                                    <img class="polaroid-picture" src="https://i.pinimg.com/736x/1a/55/6a/1a556a839966f5f29263664be5b794eb.jpg">
+                                    <input type="text" class="name mt-2 tangerine-bold p-0" id="name" placeholder="Nome Sobrenome">
                                 </div>
                             </div>
                         </div>
                         <!-- paper sheet -->
-                        <div class="col-8 col-lg-8 paper obj-ds p-3" id="basic-info">
-                            <div class="row row-gap-5">
+                        <div class="col-8 col-lg-8 paper ds-1 p-3" id="char-detail">
+                            <div class="row row-gap-3 tw-font">
                                 <!-- details -->
-                                
+                                <div class="col-5">
+                                    <label for="nacionality">Nacionalidade</label>
+                                    <input class="detail-input" type="text" name="nacionality" id="nacionality">
+                                </div>
+                                <div class="col-3">
+                                    <label for="bday">Niver</label>
+                                    <input class="detail-input" type="text" name="bday" id="bday">
+                                </div>
+                                <div class="col-4">
+                                    <label for="age">Idade</label>
+                                    <input class="detail-input" type="text" name="age" id="age">
+                                </div>
+                                <div class="col-8">
+                                    <label for="shape">Corpo</label>
+                                    <input class="detail-input" type="text" name="shape" id="shape">
+                                </div>
+                                <div class="col-4">
+                                    <label for="height">Altura</label>
+                                    <input class="detail-input" type="text" name="height" id="height">
+                                </div>
                                 <!-- status -->
                                 <div class="col-12">
                                     <div class="row row-gap-4 align-items-center">
@@ -437,7 +493,7 @@
                     </div>
                 </div>
                 <div class="d-none d-lg-grid col-1"></div>
-                <div class="col-12 col-lg-5 tw-font docnote ps-4 obj-ds">
+                <div class="col-12 col-lg-5 tw-font paper-2 ps-4 ds-1">
                     <div class="bl"></div>
                     <div class="p-2 ps-3 pe-2 bb">
                         <div class="row align-items-center">
